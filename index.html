@@ -1,0 +1,32 @@
+<!--index.html-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <link rel="stylesheet" href="style.css">
+    <script src="./buttons.js"></script>
+  </head>
+  <body>
+    <header id="titlebar">
+      <div id="drag-region"></div>
+    </header>
+    <div class="overlay-main">
+      <div class="container0">
+       <div class="container1">
+          <div class="pet" id="pet">
+            <img class="holder" src="./assets/holder.gif"/>
+          </div>
+        </div>
+        <div class="container2">
+          <div class="button" id="button1" tabindex="1"></div>
+          <div class="button" id="button2" tabindex="1"></div>
+          <div class="button" id="button3" tabindex="1"></div>
+        </div>
+        </div>
+    </div>
+    <!-- You can also require other files to run in this process -->
+    <script src="./renderer.js"></script>
+  </body>
+</html>
